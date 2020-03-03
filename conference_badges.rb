@@ -18,3 +18,16 @@ def assign_rooms(array)
   }
   return arr
 end
+
+def printer(array)
+  getbatch = batch_badge_creator(array)
+
+  getbatch.each do |element|
+    puts element
+  end
+
+  getassign = assign_rooms(array)
+  getassign.each do |element|
+    puts element
+  end
+end
